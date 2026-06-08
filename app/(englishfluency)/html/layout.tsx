@@ -1,3 +1,4 @@
+import { inter } from "@/app/ui/fonts";
 import HtmlNavbar from "../components/HtmlNavbar";
 
 
@@ -9,7 +10,7 @@ export default function HtmlLayout({
   return (
     <div
       lang="en"
-      className={` h-full antialiased`}
+      className={`${inter.className} h-full antialiased`}
     >
       <HtmlNavbar/>
       <div className="min-h-full flex flex-col">{children}</div>
